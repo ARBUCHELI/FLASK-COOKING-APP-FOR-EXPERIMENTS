@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
-  <h1>Cooking By Myself</h1>
-  <p>Welcome to my cookbook. These are recipes I like.</p>
+  <img style=" display: block; margin-left: auto; margin-right: auto; border-radius: 5px; border: 1px solid #c94c4c" src="https://raw.githubusercontent.com/ARBUCHELI/adopt-a-pet-flask-project/master/adopt_a_pet.jpg" alt="Adopt a Pet" width="200" height="200">
+  <h1 style="font-family: Courier New; font-size: 4em; font-weight: bold; text-align: center; color: #6A5ACD;">Cooking By Myself</h1>
+  <p style="font-family: Courier New; font-size: 1.5em;">Welcome to my cookbook. These are recipes I like.</p>
   {% for id, name in template_recipes.items() %}
     <p><a href="{{ url_for('recipe', id=id) }}">{{ name }}</a></p>
   {% endfor %}
